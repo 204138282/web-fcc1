@@ -2,14 +2,20 @@
   font-family: "PingFang SC", "Arial Narrow", Arial, sans-serif;
 }
 #header {
-  background-color: bisque;
+  background-color: black;
+  height: 50px;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+     color: white;
+     text-decoration: none;
 }
 
 .header-div {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  display: inline-block;
+  background-color: black;
 }
 
 .header-img {
@@ -22,13 +28,33 @@
 }
 .header-left {
   float: left;
-  /* margin: 0px auto; */
+}
+.header-title {
+  float: left;
 }
 
 .header-right {
-     float: right;
+  float: right;
 }
 
 .title {
   color: brown;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  height: 40px;
+  background-color: rgba(52, 52, 54, 0.5);
+  color: white;
+  border-color: transparent;
+}
+
+button:nth-child(1) {
+  background-color: black;
+  border-color: rgba(52, 52, 54, 0.5);
+  width: 80px;
 }
