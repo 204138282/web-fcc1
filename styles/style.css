@@ -3,19 +3,31 @@
 }
 #header {
   background-color: black;
-  height: 50px;
 }
 
 a:hover,
 a:visited,
 a:link,
 a:active {
-     color: white;
-     text-decoration: none;
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+/*伪元素用法*/
+.a-title:hover,
+.a-title:visited,
+.a-title:link,
+.a-title:active {
+  color: white;
+  text-decoration: none;
 }
 
 .header-div {
   background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-img {
@@ -47,14 +59,90 @@ a:active {
 }
 
 button {
+  font-family: inherit;
   height: 40px;
-  background-color: rgba(52, 52, 54, 0.5);
+  background-color: rgba(52, 52, 54, 1);
   color: white;
   border-color: transparent;
+  margin-right: 5px;
 }
 
 button:nth-child(1) {
   background-color: black;
-  border-color: rgba(52, 52, 54, 0.5);
+  border-width: 5px;
+  border-color: rgba(52, 52, 54, 1);
   width: 80px;
+}
+
+button:nth-child(4) {
+  margin-right: 20px;
+}
+
+/*main*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(52, 52, 54, 0.1);
+  margin: 0 50px;
+}
+h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 22;
+  font-weight: 400;
+  font-style: oblique;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  font-weight: normal;
+}
+
+q {
+  font-weight: 200;
+}
+
+.div-introduce {
+  margin: 0 50px;
+  padding: 10px;
+  border-width: 1;
+  border-color: rgba(52, 52, 54, 1);
+  background-color: white;
+  text-align: center;
+}
+
+.div-content {
+  margin: 20px 80px;
+  border-color: black;
+  border-width: 1;
+}
+
+.content-year {
+  font-weight: 500;
+}
+
+.blockquote-footer {
+  margin-top: 20px;
+}
+
+/*伪元素用法::before 和 ::after */
+.blockquote-footer::before {
+  content: "--";
+}
+
+.a-footer {
+  color: initial;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
